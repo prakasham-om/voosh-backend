@@ -5,6 +5,6 @@ const router = express.Router();
 
 router.post("/addTask", requireAuth, addTask)
 router.get("/getTask",requireAuth, getTask)
-router.get("/removeTask",requireAuth, removeTask)
+router.delete("/removeTask",requireAuth, removeTask)
 
 export default router;
